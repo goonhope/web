@@ -42,7 +42,7 @@ def page01(du):
 def page02(du):
     return '''<head><title>''' + du[0] + '''中转</title></head><script language="JavaScript">
     var autoResize = (strg) =>$(strg).attr("scrolling": "no").load(function() {
-    $(this).css({"height": (this).contents().height() + "px","width": $(this).contents().width() + "px"};}); </script>
+    $(this).css({"height": (this).contents().height() + "px","width": $(this).contents().width() + "px"}); </script>
     <iframe src="''' + du[1] + '''" width="100%" height="100%" id="iframe" marginheight="0" frameborder="0"
      onLoad="autoResize('iframe');"></iframe>'''
 
