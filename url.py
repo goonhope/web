@@ -25,7 +25,7 @@ def mainpage():
     '''
 
 
-def page(du):
+def page01(du):
     return '''<head><title>''' + du[0] + '''中转</title></head><script language="JavaScript">
     <!--function autoResize(id){
     var newheight;  var newwidth;
@@ -39,7 +39,7 @@ def page(du):
      onLoad="autoResize('iframe');"></iframe>'''
 
 
-def pag(du):
+def page02(du):
     return '''<head><title>''' + du[0] + '''中转</title></head><script language="JavaScript">
     var autoResize = (strg) =>$(strg).attr("scrolling": "no").load(function() {
     $(this).css({"height": (this).contents().height() + "px","width": $(this).contents().width() + "px"};}); </script>
