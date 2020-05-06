@@ -1,1 +1,27 @@
-
+<!--DOCTYPE html-->
+<html lang="zh-CN" charset="UTF-8">
+    <head>
+        {% if name %}
+            <title>{{name}} 中转页</title>
+            <script language="JavaScript">
+            var autoResize = (strg) =>$(strg).attr("scrolling": "no").load(
+            function(){
+            $(this).css({"height": $(this).contents().scrollHeight + "px",
+                             "width": $(this).contents().scrollWidth  + "px"})})
+            </script>
+        {% else %}
+            <title>Teddy source</title>
+        {% endif %}
+    </head>
+    <body>
+        {% if name %}
+            <iframe src={{url}}  width="100%" height="100%" id="iframe" marginheight="0" frameborder="0"
+             onLoad="autoResize('iframe');"></iframe>
+         {% else %}
+            <h1>Index of Teddy</h1>
+            <h2><a href="/google">1.google搜索</a></h2>
+            <br>
+            <h2><a href="/book">2.文献论文下载</a></h2>
+         {% endif %}
+    </body>
+<!--/html-->
