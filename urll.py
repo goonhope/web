@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 '''
-@FileName	 :   url.py 
+@FileName	 :   urll.py 
 @Created     :   2020/05/04
-@Updated    :   2020/05/05
-@Author		  :   goonhope@gmail.com
-@Function	  :   临时中转
+@Updated     :   2020/05/05
+@Author		 :   goonhope@gmail.com
+@Function	 :   临时中转
 '''
 
 from flask import Flask,render_template as tmp
